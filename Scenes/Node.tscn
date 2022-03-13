@@ -1,0 +1,51 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scenes/SolPiege.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Piege1.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Piege2.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Sol2.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/Sol1.tscn" type="PackedScene" id=5]
+
+[node name="Node" type="Node"]
+
+[node name="Environement" type="Node" parent="."]
+pause_mode = 1
+
+[node name="Sol1" parent="Environement" instance=ExtResource( 5 )]
+visible = false
+position = Vector2( -960, 540 )
+scale = Vector2( 18, 1 )
+
+[node name="Sol1_2" parent="Environement" instance=ExtResource( 5 )]
+visible = false
+position = Vector2( 3180, 540 )
+scale = Vector2( 17.5, 1 )
+
+[node name="Piege1" parent="Environement" instance=ExtResource( 2 )]
+visible = false
+position = Vector2( 500, 360 )
+
+[node name="Piege2" parent="Environement" instance=ExtResource( 3 )]
+visible = false
+position = Vector2( 1200, 360 )
+
+[node name="Sol2" parent="Environement" instance=ExtResource( 4 )]
+visible = false
+position = Vector2( 2280, 360 )
+
+[node name="Sol2_2" parent="Environement" instance=ExtResource( 4 )]
+visible = false
+position = Vector2( 2725, 270 )
+
+[node name="Sol2_3" parent="Environement" instance=ExtResource( 4 )]
+visible = false
+position = Vector2( 2975, 60 )
+
+[node name="Sol2_4" parent="Environement" instance=ExtResource( 4 )]
+visible = false
+position = Vector2( 2975, 460 )
+scale = Vector2( 1, 1.01345 )
+
+[node name="SolPiege" parent="Environement" instance=ExtResource( 1 )]
+visible = false
+position = Vector2( 2280, 540 )

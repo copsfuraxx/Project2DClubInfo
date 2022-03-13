@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scenes/Piege1.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Sol1.tscn" type="PackedScene" id=2]
+
+[node name="PrefabA" type="Node2D"]
+
+[node name="Piege1" parent="." instance=ExtResource( 1 )]
+position = Vector2( -860, 360 )
+
+[node name="Piege1_2" parent="." instance=ExtResource( 1 )]
+position = Vector2( -260, 360 )
+
+[node name="Piege1_3" parent="." instance=ExtResource( 1 )]
+position = Vector2( -190, 360 )
+
+[node name="Piege1_4" parent="." instance=ExtResource( 1 )]
+position = Vector2( 340, 360 )
+
+[node name="Piege1_5" parent="." instance=ExtResource( 1 )]
+position = Vector2( 410, 360 )
+
+[node name="Piege1_6" parent="." instance=ExtResource( 1 )]
+position = Vector2( 480, 360 )
+
+[node name="Sol1" parent="." instance=ExtResource( 2 )]
+position = Vector2( -960, 540 )
+scale = Vector2( 10.7, 1 )

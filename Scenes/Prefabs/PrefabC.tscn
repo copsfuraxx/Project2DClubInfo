@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scenes/Sol1.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Bump.tscn" type="PackedScene" id=2]
+
+[node name="PrefabC" type="Node2D"]
+
+[node name="Bump" parent="." instance=ExtResource( 2 )]
+position = Vector2( -860, 360 )
+
+[node name="Bump2" parent="." instance=ExtResource( 2 )]
+position = Vector2( -260, 360 )
+
+[node name="Bump3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 340, 360 )
+
+[node name="Sol1" parent="." instance=ExtResource( 1 )]
+position = Vector2( -960, 540 )
+scale = Vector2( 10.7, 1 )
+
+[node name="Sol1_2" parent="." instance=ExtResource( 1 )]
+position = Vector2( -960, 100 )
+scale = Vector2( 8, 1 )

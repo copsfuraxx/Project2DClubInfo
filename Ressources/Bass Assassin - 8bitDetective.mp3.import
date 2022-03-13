@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Bass Assassin - 8bitDetective.mp3-f5181232c2926aadb7383a60f2c2bc3b.mp3str"
+
+[deps]
+
+source_file="res://Ressources/Bass Assassin - 8bitDetective.mp3"
+dest_files=[ "res://.import/Bass Assassin - 8bitDetective.mp3-f5181232c2926aadb7383a60f2c2bc3b.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

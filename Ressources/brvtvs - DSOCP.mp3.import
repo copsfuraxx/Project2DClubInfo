@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/brvtvs - DSOCP.mp3-fbcee356591f85f3d2e9a2f10be22de5.mp3str"
+
+[deps]
+
+source_file="res://Ressources/brvtvs - DSOCP.mp3"
+dest_files=[ "res://.import/brvtvs - DSOCP.mp3-fbcee356591f85f3d2e9a2f10be22de5.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
