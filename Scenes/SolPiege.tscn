@@ -1,6 +1,5 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Ressources/Triangle.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/Piege.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
@@ -16,7 +15,7 @@ shape = SubResource( 1 )
 
 [node name="Polygon2D" type="Polygon2D" parent="."]
 color = Color( 0, 0, 0, 1 )
-texture = ExtResource( 1 )
-polygon = PoolVector2Array( 0, 0, 900, 0, 900, -90, 0, -90 )
+antialiased = true
+polygon = PoolVector2Array( 0, 0, 900, 0, 850, -90, 800, 0, 750, -90, 700, 0, 650, -90, 600, 0, 550, -90, 500, 0, 450, -90, 400, 0, 350, -90, 300, 0, 250, -90, 200, 0, 150, -90, 100, 0, 50, -90 )
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

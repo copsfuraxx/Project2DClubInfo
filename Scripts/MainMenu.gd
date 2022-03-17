@@ -1,6 +1,7 @@
 extends Control
 
 func _ready():
+	$Play.grab_focus()
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 
 func _on_PlayEndLess_pressed():
@@ -13,3 +14,8 @@ func _on_Credits_pressed():
 
 func _on_Quit_pressed():
 	get_tree().quit()
+
+
+func _on_Option_pressed():
+	if get_tree().change_scene("res://Scenes/Menu/OptionMenu.tscn") != OK:
+		print ("Errorr on loading credit scene")

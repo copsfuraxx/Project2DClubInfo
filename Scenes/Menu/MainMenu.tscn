@@ -22,6 +22,7 @@ margin_left = 3.44354
 margin_top = 0.019989
 margin_right = 3.68347
 margin_bottom = -0.380035
+focus_neighbour_top = NodePath("../Quit")
 text = "Play"
 
 [node name="Option" type="Button" parent="."]
@@ -31,7 +32,6 @@ anchor_right = 0.641
 anchor_bottom = 0.472
 margin_top = 0.139984
 margin_bottom = -0.26004
-disabled = true
 text = "Option"
 
 [node name="Credits" type="Button" parent="."]
@@ -49,8 +49,11 @@ anchor_right = 0.641
 anchor_bottom = 0.694
 margin_top = 0.379944
 margin_bottom = -0.0200195
+focus_neighbour_bottom = NodePath("../Play")
+focus_next = NodePath("../Play")
 text = "LEAVE"
 
 [connection signal="pressed" from="Play" to="." method="_on_PlayEndLess_pressed"]
+[connection signal="pressed" from="Option" to="." method="_on_Option_pressed"]
 [connection signal="pressed" from="Credits" to="." method="_on_Credits_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_Quit_pressed"]

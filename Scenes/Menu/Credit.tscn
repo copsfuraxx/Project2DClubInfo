@@ -1,27 +1,72 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://Ressources/Font.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Ressources/Theme.tres" type="Theme" id=1]
 [ext_resource path="res://Scripts/Credit.gd" type="Script" id=2]
+[ext_resource path="res://Ressources/pierreB-Logo-EISPRISTIC.png" type="Texture" id=3]
 
 [node name="Credit" type="Control"]
 pause_mode = 2
 anchor_right = 1.0
 anchor_bottom = 1.0
+theme = ExtResource( 1 )
 script = ExtResource( 2 )
 
-[node name="Label" type="Label" parent="."]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
+[node name="Dev" type="Label" parent="."]
+anchor_left = 0.362
+anchor_top = 0.128
+anchor_right = 0.637
+anchor_bottom = 0.229
+margin_left = 0.959961
+margin_top = -0.240005
+margin_right = 0.959961
+margin_bottom = -0.320023
+text = "Game made by
+Jules Finck"
+align = 1
+
+[node name="Music" type="Label" parent="."]
+anchor_left = 0.091
+anchor_top = 0.331
+anchor_right = 0.909
 anchor_bottom = 0.5
-margin_left = -784.5
-margin_top = -82.5
-margin_right = 784.5
-margin_bottom = 82.5
-custom_fonts/font = ExtResource( 1 )
+margin_left = 0.779984
+margin_top = 0.0199585
+margin_right = -0.780029
+margin_bottom = -17.5
 text = "Music
 8bitDetective by Bass Assassin
 DSOCP by BrvtVs"
 align = 1
+
+[node name="Control" type="Control" parent="."]
+anchor_top = 0.565
+anchor_right = 1.0
+anchor_bottom = 0.91
+margin_top = -0.200012
+margin_bottom = 0.199951
+mouse_filter = 1
+
+[node name="Label" type="Label" parent="Control"]
+anchor_left = 0.33
+anchor_right = 0.67
+margin_left = 0.399963
+margin_right = -0.400024
+margin_bottom = 109.0
+grow_horizontal = 2
+text = "For Club Info
+From Eispri Stic"
+align = 1
+
+[node name="TextureRect" type="TextureRect" parent="Control"]
+anchor_left = 0.417
+anchor_top = 1.0
+anchor_right = 0.583
+anchor_bottom = 1.0
+margin_left = -0.640076
+margin_top = -256.0
+margin_right = 0.640015
+texture = ExtResource( 3 )
+expand = true
+stretch_mode = 6
 
 [connection signal="gui_input" from="." to="." method="_on_Credit_gui_input"]

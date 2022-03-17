@@ -1,5 +1,6 @@
 extends Area2D
 
 func _on_body_entered(_body):
-	if get_tree().reload_current_scene() != OK:
-		print ("Errorr on reloading current scene")
+	get_tree().paused = true
+	var scene = load("res://Scenes/Menu/DeadMenu.tscn")
+	get_node("/root/EndLessRun").add_child(scene.instance())

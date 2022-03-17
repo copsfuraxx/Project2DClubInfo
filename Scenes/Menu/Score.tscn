@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Ressources/Font.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Scripts/Score.gd" type="Script" id=2]
+
+[node name="Score" type="Control"]
+anchor_left = -0.5
+anchor_top = -0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.487
+anchor_top = 0.049
+anchor_right = 0.513
+anchor_bottom = 0.098
+margin_left = 0.459961
+margin_top = 0.079998
+margin_right = -0.460022
+margin_bottom = 0.159996
+grow_horizontal = 2
+custom_fonts/font = ExtResource( 1 )
+text = "0"
+script = ExtResource( 2 )
