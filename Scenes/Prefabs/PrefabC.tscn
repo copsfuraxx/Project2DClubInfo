@@ -5,7 +5,7 @@
 [ext_resource path="res://Scenes/Prefabs/PrefabType.tscn" type="PackedScene" id=3]
 
 [node name="PrefabC" instance=ExtResource( 3 )]
-lenght = 1920
+length = 1920
 
 [node name="Bump" parent="." index="0" instance=ExtResource( 2 )]
 position = Vector2( 200, 360 )

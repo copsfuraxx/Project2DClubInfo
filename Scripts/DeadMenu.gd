@@ -1,9 +1,14 @@
 extends Control
 
 func _ready():
-	$Panel.visible = true
+	if Globals.nom != "":
+		Globals.addScore(Globals.nom)
+		Globals.saveScore()
+		$Restart.grab_focus()
+	else:
+		$Panel.visible = true
+		$Panel/LineEdit.grab_focus()
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-	$Panel/LineEdit.grab_focus()
 
 func _on_Restart_pressed():
 	Globals.score = 0
@@ -17,10 +22,12 @@ func _on_Menu_pressed():
 func _on_Button_pressed():
 	if $Panel/LineEdit.text.length() > 1 && $Panel/LineEdit.text.split(" ", false).size() > 0:
 		Globals.addScore($Panel/LineEdit.text)
+		if $Panel/CheckBox.pressed:
+			Globals.nom = $Panel/LineEdit.text
 	else:
 		Globals.addScore("anon")
 	Globals.saveScore()
-	$Panel.queue_free()
+	$Panel.visible = false
 	$Restart.grab_focus()
 
 func _on_HighScore_pressed():

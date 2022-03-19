@@ -5,7 +5,7 @@
 [ext_resource path="res://Scenes/Prefabs/PrefabType.tscn" type="PackedScene" id=3]
 
 [node name="PrefabA" instance=ExtResource( 3 )]
-lenght = 1920
+length = 1920
 
 [node name="Piege1" parent="." index="0" instance=ExtResource( 1 )]
 position = Vector2( 250, 360 )

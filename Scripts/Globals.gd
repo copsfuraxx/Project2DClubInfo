@@ -5,6 +5,7 @@ var score = 0
 var volume = 80
 var music = true
 var scores = [["none", 0],["none", 0],["none", 0],["none", 0],["none", 0]]
+var nom = ""
 
 func _ready():
 	rng.randomize()

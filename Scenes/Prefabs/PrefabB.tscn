@@ -6,7 +6,7 @@
 [ext_resource path="res://Scenes/Prefabs/PrefabType.tscn" type="PackedScene" id=4]
 
 [node name="PrefabB" instance=ExtResource( 4 )]
-lenght = 1370
+length = 1370
 
 [node name="Sol2" parent="." index="0" instance=ExtResource( 2 )]
 position = Vector2( 610, 450 )
