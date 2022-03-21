@@ -1,6 +1,6 @@
 extends Node
 
-var prefabs = ['A','B','C','D']
+var prefabs = ['A','B','C','D','E']
 var fils = []
 export(NodePath) var player_path
 var player

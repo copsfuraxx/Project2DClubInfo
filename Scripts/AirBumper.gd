@@ -1,6 +1,6 @@
 extends Area2D
 
-export var jump_force = 1700
+export var jump_force = 1275
 export(NodePath) var player_path = null
 signal bump(force)
 var isIn = false;
@@ -12,12 +12,17 @@ func _ready():
 		connect("bump", get_node(player_path), "bump")		
 
 func _physics_process(_delta):
-	if isIn && Input.is_action_just_released("jump"):
+	if isIn && Input.is_action_just_pressed("jump"):
 		emit_signal("bump", jump_force)
 		isIn = false
 
 func _on_AirBumper_body_entered(body):
+	if isIn && Input.is_action_just_pressed("jump"):
+		emit_signal("bump", jump_force)
+		isIn = false
+
+func _on_Area2D_body_entered(body):
 	isIn = true
 
-func _on_AirBumper_body_exited(body):
+func _on_Area2D_body_exited(body):
 	isIn = false
