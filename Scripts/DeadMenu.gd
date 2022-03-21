@@ -41,7 +41,3 @@ func _on_HighScore_pressed():
 func _on_Button2_pressed():
 	$Panel2.visible = false
 	$Restart.grab_focus()
-
-func _on_LineEdit_gui_input(event):
-	if Input.is_action_just_pressed("ui_accept"):
-		_on_Button_pressed()

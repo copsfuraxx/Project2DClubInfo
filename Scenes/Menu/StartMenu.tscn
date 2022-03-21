@@ -21,4 +21,4 @@ margin_top = -26.5
 margin_right = 505.5
 margin_bottom = 26.5
 custom_fonts/font = ExtResource( 1 )
-text = "PRESSE SPACE TO START"
+text = "PRESS SPACE TO START"

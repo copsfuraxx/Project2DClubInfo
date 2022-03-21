@@ -153,5 +153,4 @@ text = "Confirm"
 [connection signal="pressed" from="Menu" to="." method="_on_Menu_pressed"]
 [connection signal="pressed" from="HighScore" to="." method="_on_HighScore_pressed"]
 [connection signal="pressed" from="Panel2/Button2" to="." method="_on_Button2_pressed"]
-[connection signal="gui_input" from="Panel/LineEdit" to="." method="_on_LineEdit_gui_input"]
 [connection signal="pressed" from="Panel/Button" to="." method="_on_Button_pressed"]
