@@ -41,3 +41,7 @@ func _on_HighScore_pressed():
 func _on_Button2_pressed():
 	$Panel2.visible = false
 	$Restart.grab_focus()
+
+
+func _on_LineEdit_text_entered(_new_text):
+	_on_Button_pressed()

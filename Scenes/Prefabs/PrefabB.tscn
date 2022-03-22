@@ -20,12 +20,15 @@ position = Vector2( 1280, 450 )
 [node name="Sol2_4" parent="." index="3" instance=ExtResource( 2 )]
 position = Vector2( 1280, 90 )
 
-[node name="SolPiege" parent="." index="4" instance=ExtResource( 3 )]
+[node name="Sol2_5" parent="." index="4" instance=ExtResource( 2 )]
+position = Vector2( 1190, 450 )
+
+[node name="SolPiege" parent="." index="5" instance=ExtResource( 3 )]
 position = Vector2( 270, 540 )
 
-[node name="SolPiege2" parent="." index="5" instance=ExtResource( 3 )]
+[node name="SolPiege2" parent="." index="6" instance=ExtResource( 3 )]
 position = Vector2( 470, 540 )
 
-[node name="Sol1" parent="." index="6" instance=ExtResource( 1 )]
+[node name="Sol1" parent="." index="7" instance=ExtResource( 1 )]
 position = Vector2( 0, 540 )
 scale = Vector2( 270, 1 )

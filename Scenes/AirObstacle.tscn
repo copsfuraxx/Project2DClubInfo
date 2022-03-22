@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scenes/Sol2.tscn" type="PackedScene" id=2]
+
+[node name="AirObstacle" type="Node2D"]
+
+[node name="Sol2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 90, -1080 )
+rotation = 3.14159
+scale = Vector2( 1, 10 )
+
+[node name="Sol2_2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 0, 1080 )
+scale = Vector2( 1, 10 )

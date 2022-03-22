@@ -11,13 +11,13 @@ func _ready():
 	rng.randomize()
 	loadScore()
 
-func addScore(nom):
+func addScore(_nom):
 	for i in range(0, scores.size()):
 		if(scores[i][1] < score):
 			for j in range(scores.size()-1, i, -1):
 				scores[j][0] = scores[j-1][0]
 				scores[j][1] = scores[j-1][1]
-			scores[i][0] = nom
+			scores[i][0] = _nom
 			scores[i][1] = score
 			return
 
@@ -38,3 +38,8 @@ func saveScore():
 	save_score.open("user://scores.save", File.WRITE)
 	for s in scores:
 		save_score.store_line(s[0] + " " + String(s[1]))
+
+func set_pause_node(node, pause):
+	node.set_process(!pause)
+	node.set_physics_process(!pause)
+	
